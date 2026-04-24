@@ -1,0 +1,26 @@
+name: 🚀 FTP Deploy to World4You
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  ftp-deploy:
+    name: 📂 Upload to World4You
+    runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    steps:
+    - name: 🚚 Get latest build
+      uses: actions/checkout@v4
+
+    - name: 📂 FTP Deploy to World4You
+      uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        protocol: ftps
+        local-dir: ./
+        server-dir: /home/
+        # Note: change /home/ to /www/ or /public_html/ if site doesn't update
