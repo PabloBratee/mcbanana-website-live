@@ -20,7 +20,7 @@ jobs:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        protocol: ftps
+        protocol: ftps-legacy
         local-dir: ./
         server-dir: /home/
         # Note: change /home/ to /www/ or /public_html/ if site doesn't update
