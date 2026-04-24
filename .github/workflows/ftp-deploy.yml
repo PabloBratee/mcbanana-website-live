@@ -23,4 +23,3 @@ jobs:
         protocol: ftp
         local-dir: ./
         server-dir: /home/
-        # Note: change /home/ to /www/ or /public_html/ if site doesn't update
