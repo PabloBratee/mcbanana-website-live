@@ -38,8 +38,11 @@
 <!-- Preconnect -->
 <link rel="preconnect" href="https://maps.googleapis.com">
 <link rel="preconnect" href="https://maps.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+
+<!-- Font preload — browser starts downloading before CSS is parsed -->
+<link rel="preload" href="/assets/Archivo-VariableFont_wdth_wght-qfHXVffu.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/Archivo-Italic-VariableFont_wdth_wght-DkrzG5to.woff2" as="font" type="font/woff2" crossorigin>
 
 <!-- Google tag (gtag.js) — consent-gated for GDPR / EU Consent Mode v2 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CQEC3CX29E"></script>
@@ -184,8 +187,9 @@
   ]
 }
 </script>
-  <script type="module" crossorigin src="/assets/index-CHi_SnSK.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-CBptuzy7.css">
+  <script type="module" crossorigin src="/assets/index-BX4LuXiT.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/vendor-wGySg1uH.js">
+  <link rel="stylesheet" crossorigin href="/assets/index-BrXHOHmY.css">
 </head>
 <body>
 <div id="root"></div>
