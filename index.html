@@ -31,9 +31,10 @@
 <meta name="twitter:description" content="iPhone, Samsung, iPad & MacBook Reparatur in 30–60 Min. 4 Filialen in Wien.">
 <meta name="twitter:image" content="https://www.mcbanana.at/assets/og-image.png">
 
-<!-- Favicon -->
+<!-- Favicon & theme -->
 <link rel="icon" type="image/png" href="/assets/mcbanana-icon.png">
 <link rel="apple-touch-icon" href="/assets/mcbanana-icon.png">
+<meta name="theme-color" content="#F5C840">
 
 <!-- Preconnect -->
 <link rel="preconnect" href="https://maps.googleapis.com">
@@ -108,11 +109,16 @@
       "@id": "https://www.mcbanana.at/#millennium",
       "name": "mcBanana Millennium City",
       "url": "https://www.mcbanana.at",
+      "logo": "https://www.mcbanana.at/assets/mcbanana-icon.png",
+      "image": "https://www.mcbanana.at/assets/mcbanana-icon.png",
       "telephone": "+43-664-5244984",
       "email": "millennium@mcbanana.at",
+      "foundingDate": "2006",
       "priceRange": "€€",
       "currenciesAccepted": "EUR",
       "paymentAccepted": "Cash, Credit Card",
+      "description": "mcBanana Filiale im Millennium City Wien – iPhone, Samsung, iPad & MacBook Reparatur ohne Termin. 6 Monate Garantie.",
+      "sameAs": ["https://www.instagram.com/mcbanana_premiumreparatur/"],
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Handelskai 94–96",
@@ -135,11 +141,16 @@
       "@id": "https://www.mcbanana.at/#auhof",
       "name": "mcBanana Auhof Center",
       "url": "https://www.mcbanana.at",
+      "logo": "https://www.mcbanana.at/assets/mcbanana-icon.png",
+      "image": "https://www.mcbanana.at/assets/mcbanana-icon.png",
       "telephone": "+43-660-6393979",
       "email": "auhof@mcbanana.at",
+      "foundingDate": "2006",
       "priceRange": "€€",
       "currenciesAccepted": "EUR",
       "paymentAccepted": "Cash, Credit Card",
+      "description": "mcBanana Filiale im Auhof Center Wien – iPhone, Samsung, iPad & MacBook Reparatur ohne Termin. 6 Monate Garantie.",
+      "sameAs": ["https://www.instagram.com/mcbanana_premiumreparatur/"],
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Albert-Schweizer-Gasse 6",
@@ -162,11 +173,16 @@
       "@id": "https://www.mcbanana.at/#scs",
       "name": "mcBanana Shopping City Süd",
       "url": "https://www.mcbanana.at",
+      "logo": "https://www.mcbanana.at/assets/mcbanana-icon.png",
+      "image": "https://www.mcbanana.at/assets/mcbanana-icon.png",
       "telephone": "+43-676-4909068",
       "email": "scs@mcbanana.at",
+      "foundingDate": "2006",
       "priceRange": "€€",
       "currenciesAccepted": "EUR",
       "paymentAccepted": "Cash, Credit Card",
+      "description": "mcBanana Filiale in der Shopping City Süd (Vösendorf) – iPhone, Samsung, iPad & MacBook Reparatur ohne Termin. 6 Monate Garantie.",
+      "sameAs": ["https://www.instagram.com/mcbanana_premiumreparatur/"],
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "SCS / Eingang 8",
@@ -187,14 +203,19 @@
   ]
 }
 </script>
-  <script type="module" crossorigin src="/assets/index-BNoLZj4y.js"></script>
+  <script type="module" crossorigin src="/assets/index-CWxQX9LX.js"></script>
   <link rel="modulepreload" crossorigin href="/assets/vendor-wGySg1uH.js">
   <link rel="stylesheet" crossorigin href="/assets/index-BKst8SMy.css">
 </head>
 <body>
 <div id="root"></div>
 
-<!-- Repender booking widget config — must be set before the widget loads -->
+<!-- Repender booking widget config — must be set before the widget loads.
+     Security note: this token is intentionally public. The Repender widget
+     runs entirely in the browser and must have the token at load time —
+     there is no server-side proxy to hide it behind. The token is scoped
+     to this domain on the Repender side (origin restriction), so exposure
+     in source does not grant access from other origins. -->
 <script>
   window.rependerUrl = 'https://repender.nl';
   window.rependerToken = '249|AFytAk0QtsRJf50UlZJdYzHOiLvdghISWyDv3L8T058fa34f';
