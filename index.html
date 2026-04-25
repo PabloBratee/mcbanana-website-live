@@ -3,43 +3,81 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>mcBanana — Reparatur ohne Termin in Wien</title>
-<meta name="description" content="mcBanana – Ihr Reparaturzentrum ohne Termin in Wien. iPhone, Samsung, iPad, MacBook reparieren in 30–60 Minuten. 4 Filialen, 6 Monate Garantie, seit 2006.">
-<meta name="keywords" content="Handy Reparatur Wien, iPhone Reparatur Wien, MacBook Reparatur, iPad Reparatur, Samsung Reparatur, Smartphone Reparatur ohne Termin">
+<title>mcBanana – iPhone, iPad & Mac Reparatur Wien ohne Termin</title>
+<meta name="description" content="mcBanana – Ihr Reparaturzentrum ohne Termin in Wien. iPhone, iPad, Mac & Samsung Reparatur in 30–60 Min. 4 Filialen, 6 Monate Garantie, seit 2006.">
+<meta name="keywords" content="Handy Reparatur Wien, iPhone Reparatur Wien, MacBook Reparatur Wien, iPad Reparatur Wien, Samsung Reparatur Wien, Smartphone Reparatur ohne Termin, Apple Reparatur Wien, Display tauschen Wien">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.mcbanana.at/">
 
+<!-- hreflang -->
+<link rel="alternate" hreflang="de-AT" href="https://www.mcbanana.at/"/>
+<link rel="alternate" hreflang="x-default" href="https://www.mcbanana.at/"/>
+
 <!-- Open Graph -->
+<meta property="og:locale" content="de_AT">
+<meta property="og:site_name" content="mcBanana">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.mcbanana.at/">
-<meta property="og:title" content="mcBanana — Reparatur ohne Termin in Wien">
+<meta property="og:title" content="mcBanana – iPhone, iPad & Mac Reparatur Wien ohne Termin">
 <meta property="og:description" content="iPhone, Samsung, iPad & MacBook Reparatur in 30–60 Min. 4 Filialen in Wien, 6 Monate Garantie, seit 2006.">
 <!-- TODO: replace with a proper 1200x630px og:image before go-live -->
 <meta property="og:image" content="https://www.mcbanana.at/assets/mcbanana-icon.png">
+<meta property="og:image:alt" content="mcBanana – Smartphone & Laptop Reparatur Wien">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="mcBanana — Reparatur ohne Termin in Wien">
+<meta name="twitter:title" content="mcBanana – iPhone, iPad & Mac Reparatur Wien">
 <meta name="twitter:description" content="iPhone, Samsung, iPad & MacBook Reparatur in 30–60 Min. 4 Filialen in Wien.">
+<meta name="twitter:image" content="https://www.mcbanana.at/assets/mcbanana-icon.png">
 
 <!-- Favicon -->
 <link rel="icon" type="image/png" href="/assets/mcbanana-icon.png">
 <link rel="apple-touch-icon" href="/assets/mcbanana-icon.png">
 
-<!-- Structured Data: Local Business -->
+<!-- Preconnect -->
+<link rel="preconnect" href="https://maps.googleapis.com">
+<link rel="preconnect" href="https://maps.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+<!-- GA4 placeholder — add measurement ID and uncomment when ready -->
+<!--
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+-->
+
+<!-- Structured Data -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "LocalBusiness",
+      "@type": "WebSite",
+      "@id": "https://www.mcbanana.at/#website",
+      "url": "https://www.mcbanana.at",
+      "name": "mcBanana",
+      "description": "iPhone, iPad, Mac & Samsung Reparatur in Wien ohne Termin.",
+      "inLanguage": "de-AT"
+    },
+    {
+      "@type": ["LocalBusiness", "ElectronicsRepair"],
+      "@id": "https://www.mcbanana.at/#mariahilfer",
       "name": "mcBanana Mariahilferstraße",
       "url": "https://www.mcbanana.at",
       "logo": "https://www.mcbanana.at/assets/mcbanana-icon.png",
+      "image": "https://www.mcbanana.at/assets/mcbanana-icon.png",
       "telephone": "+43-676-4909068",
       "email": "office@mcbanana.at",
       "foundingDate": "2006",
-      "description": "Reparaturzentrum ohne Termin in Wien für iPhone, Samsung, iPad, MacBook und mehr.",
+      "priceRange": "€€",
+      "currenciesAccepted": "EUR",
+      "paymentAccepted": "Cash, Credit Card",
+      "description": "Reparaturzentrum ohne Termin in Wien für iPhone, Samsung, iPad, MacBook und mehr. 6 Monate Garantie auf alle Reparaturen.",
+      "sameAs": ["https://www.instagram.com/mcbanana_premiumreparatur/"],
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Mariahilferstraße 140",
@@ -47,17 +85,26 @@
         "postalCode": "1150",
         "addressCountry": "AT"
       },
+      "areaServed": {
+        "@type": "City",
+        "name": "Wien",
+        "sameAs": "https://www.wikidata.org/wiki/Q1741"
+      },
       "openingHoursSpecification": [
         { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:30", "closes": "19:00" },
         { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday"], "opens": "10:00", "closes": "18:00" }
       ]
     },
     {
-      "@type": "LocalBusiness",
+      "@type": ["LocalBusiness", "ElectronicsRepair"],
+      "@id": "https://www.mcbanana.at/#millennium",
       "name": "mcBanana Millennium City",
       "url": "https://www.mcbanana.at",
       "telephone": "+43-664-5244984",
       "email": "millennium@mcbanana.at",
+      "priceRange": "€€",
+      "currenciesAccepted": "EUR",
+      "paymentAccepted": "Cash, Credit Card",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Handelskai 94–96",
@@ -65,17 +112,26 @@
         "postalCode": "1200",
         "addressCountry": "AT"
       },
+      "areaServed": {
+        "@type": "City",
+        "name": "Wien",
+        "sameAs": "https://www.wikidata.org/wiki/Q1741"
+      },
       "openingHoursSpecification": [
         { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "20:00" },
         { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday"], "opens": "09:00", "closes": "18:00" }
       ]
     },
     {
-      "@type": "LocalBusiness",
+      "@type": ["LocalBusiness", "ElectronicsRepair"],
+      "@id": "https://www.mcbanana.at/#auhof",
       "name": "mcBanana Auhof Center",
       "url": "https://www.mcbanana.at",
       "telephone": "+43-660-6393979",
       "email": "auhof@mcbanana.at",
+      "priceRange": "€€",
+      "currenciesAccepted": "EUR",
+      "paymentAccepted": "Cash, Credit Card",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Albert-Schweizer-Gasse 6",
@@ -83,17 +139,26 @@
         "postalCode": "1140",
         "addressCountry": "AT"
       },
+      "areaServed": {
+        "@type": "City",
+        "name": "Wien",
+        "sameAs": "https://www.wikidata.org/wiki/Q1741"
+      },
       "openingHoursSpecification": [
         { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "20:00" },
         { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday"], "opens": "09:00", "closes": "18:00" }
       ]
     },
     {
-      "@type": "LocalBusiness",
+      "@type": ["LocalBusiness", "ElectronicsRepair"],
+      "@id": "https://www.mcbanana.at/#scs",
       "name": "mcBanana Shopping City Süd",
       "url": "https://www.mcbanana.at",
       "telephone": "+43-676-4909068",
       "email": "scs@mcbanana.at",
+      "priceRange": "€€",
+      "currenciesAccepted": "EUR",
+      "paymentAccepted": "Cash, Credit Card",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "SCS / Eingang 8",
@@ -101,6 +166,10 @@
         "postalCode": "2334",
         "addressCountry": "AT"
       },
+      "areaServed": [
+        { "@type": "City", "name": "Vösendorf" },
+        { "@type": "City", "name": "Wien", "sameAs": "https://www.wikidata.org/wiki/Q1741" }
+      ],
       "openingHoursSpecification": [
         { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday"], "opens": "09:00", "closes": "19:00" },
         { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Thursday","Friday"], "opens": "09:00", "closes": "20:00" },
@@ -110,8 +179,8 @@
   ]
 }
 </script>
-  <script type="module" crossorigin src="/assets/index-DLb-SgvL.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-DAa7kM7J.css">
+  <script type="module" crossorigin src="/assets/index-2GOhqt3i.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BOOJfh0j.css">
 </head>
 <body>
 <div id="root"></div>
