@@ -36,18 +36,17 @@
 <link rel="apple-touch-icon" href="/assets/mcbanana-icon.png">
 <meta name="theme-color" content="#F5C840">
 
-<!-- Preconnect — GTM only; Maps preconnect deferred since maps are click-to-load -->
-<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
-
 <!-- Font preload — browser starts downloading before CSS is parsed -->
 <link rel="preload" href="/fonts/Archivo-VariableFont_wdth_wght.woff2" as="font" type="font/woff2" crossorigin fetchpriority="high">
 <link rel="preload" href="/fonts/Archivo-Italic-VariableFont_wdth_wght.woff2" as="font" type="font/woff2" crossorigin>
 
 <!-- Logo preload — LCP candidate on mobile -->
-<link rel="preload" href="/assets/mcbanana-icon.png" as="image" fetchpriority="high">
+<link rel="preload" href="/assets/mcbanana-icon-44.png" as="image" fetchpriority="high" imagesrcset="/assets/mcbanana-icon-44.png 1x, /assets/mcbanana-icon-88.png 2x">
 
 <!-- Critical above-the-fold CSS — prevents FOUC while the full CSS bundle loads -->
 <style>
+@font-face{font-family:"Archivo";src:url("/fonts/Archivo-VariableFont_wdth_wght.woff2") format("woff2-variations");font-weight:100 900;font-stretch:62.5% 125%;font-style:normal;font-display:optional}
+@font-face{font-family:"Archivo";src:url("/fonts/Archivo-Italic-VariableFont_wdth_wght.woff2") format("woff2-variations");font-weight:100 900;font-stretch:62.5% 125%;font-style:italic;font-display:optional}
 :root{--banana-500:#F5C840;--banana-600:#E8B82C;--banana-400:#FFD659;--banana-100:#FFF7DC;--banana-300:#FCE58A;--charcoal-900:#2F2A28;--charcoal-800:#3B3531;--charcoal-700:#5A524D;--charcoal-500:#8A827C;--charcoal-300:#C9C3BD;--charcoal-200:#E4DFD9;--charcoal-100:#F2EEE8;--white:#fff;--success:#2F9E5B;--success-bg:#E6F4EC;--danger:#D4452C;--danger-bg:#FBE7E2;--bg:var(--white);--fg1:var(--charcoal-900);--fg2:var(--charcoal-700);--border:var(--charcoal-200);--accent:var(--banana-500);--accent-dark:var(--banana-600);--shadow-sm:0 1px 2px rgba(47,42,40,.06),0 1px 1px rgba(47,42,40,.04);--shadow-md:0 4px 12px rgba(47,42,40,.08),0 1px 3px rgba(47,42,40,.05);--shadow-lg:0 12px 28px rgba(47,42,40,.12),0 4px 8px rgba(47,42,40,.06);--shadow-yellow:0 8px 22px rgba(245,200,64,.35);--radius-xs:6px;--radius-sm:10px;--radius-md:14px;--radius-lg:20px;--radius-xl:28px;--radius-pill:999px;--page-max:1280px;--pad-x:clamp(20px,4vw,56px);--font-display:"Archivo",system-ui,sans-serif;--font-body:"Archivo",system-ui,-apple-system,"Segoe UI",sans-serif;}
 *{box-sizing:border-box}html,body{margin:0;padding:0}body{font-family:var(--font-body);font-size:16px;line-height:1.5;color:var(--fg1);background:var(--bg);-webkit-font-smoothing:antialiased;overflow-x:hidden}a{color:inherit;text-decoration:none}button{border:none;background:none;font:inherit;cursor:pointer;color:inherit}img{max-width:100%;display:block}h1,h2,h3,h4{margin:0;font-family:var(--font-display);color:var(--fg1)}p{margin:0}.page{min-height:100vh}.container{max-width:var(--page-max);margin:0 auto;padding:0 var(--pad-x)}
 .nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.85);backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);border-bottom:1px solid transparent;transition:border-color .2s,background .2s}.nav-inner{display:flex;align-items:center;justify-content:space-between;height:76px;gap:24px}.nav-brand{display:flex;align-items:center;gap:12px;cursor:pointer}.nav-brand img{height:44px;width:44px;border-radius:12px}.nav-brand-word{font-family:var(--font-display);font-weight:800;font-size:22px;letter-spacing:-0.02em;color:var(--charcoal-900)}.nav-links{display:flex;gap:4px;align-items:center}.nav-links button{padding:10px 16px;border-radius:999px;font-size:14px;font-weight:600;color:var(--charcoal-800);cursor:pointer}.nav-phone{display:inline-flex;align-items:center;gap:8px;padding:10px 18px 10px 14px;background:var(--accent);border-radius:999px;font-weight:800;font-size:14px;color:var(--charcoal-900)}.nav-burger{display:none;align-items:center;justify-content:center;width:40px;height:40px;border-radius:10px;color:var(--charcoal-900);flex-shrink:0}
@@ -227,10 +226,10 @@
   ]
 }
 </script>
-  <script type="module" crossorigin src="/assets/index-XcbOtpmD.js"></script>
+  <script type="module" crossorigin src="/assets/index-DiekTko4.js"></script>
   <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime-jpDsebLB.js">
   <link rel="modulepreload" crossorigin href="/assets/vendor-CeSq11q2.js">
-  <link rel="stylesheet" crossorigin href="/assets/index-BHIU3TQ9.css">
+  <link rel="stylesheet" crossorigin href="/assets/index-Co3l0mL5.css">
 </head>
 <body>
 <div id="root"></div>
